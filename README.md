@@ -173,9 +173,9 @@ app/src/main/java/es/didaktikapp/repasoapp/
 
 Soporte completo para 3 idiomas:
 
-- 🇬🇧 **Inglés** (por defecto) - `values/strings.xml`
-- 🇪🇸 **Español** - `values-es/strings.xml`
-- 🏴󐁥󐁳󐁰󐁶󐁿 **Euskera** - `values-eu/strings.xml`
+- **Inglés** (por defecto) - `values/strings.xml`
+- **Español** - `values-es/strings.xml`
+- **Euskera** - `values-eu/strings.xml`
 
 ---
 
@@ -309,35 +309,18 @@ La aplicación requiere los siguientes permisos:
 
 ---
 
-## 📄 Licencia
-
-Este proyecto es de código educativo desarrollado con fines académicos. Siéntete libre de usarlo como referencia para aprendizaje.
-
----
-
 ## 👨‍💻 Autora
 
 **Wara Pacheco**
 
 - **Asignatura:** Programación Multimedia y Dispositivos Móviles
 - **Curso:** 2025-2026
-- **Institución:** [Tu institución educativa]
 - **Fecha:** Febrero 2026
-
----
-
-## 🙏 Agradecimientos
-
-- [Google Maps Platform](https://developers.google.com/maps) - SDK de mapas
-- [Material Design](https://m3.material.io/) - Guías de diseño
-- [Android Developers](https://developer.android.com/) - Documentación oficial
 
 ---
 
 <div align="center">
 
-**⭐ Si este proyecto te ha sido útil, considera darle una estrella ⭐**
-
-Hecho con ❤️ y Kotlin
+Hecho con ❤️ para Amaia
 
 </div>
