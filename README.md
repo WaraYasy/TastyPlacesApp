@@ -1,34 +1,94 @@
 # 📱 TastyPlaces - Gestión de Lugares Favoritos
 
-Aplicación Android nativa desarrollada en Kotlin para gestionar lugares gastronómicos favoritos (restaurantes, cafeterías, bares y panaderías) con integración de mapas y geolocalización.
+Aplicación Android nativa desarrollada en **Kotlin** para gestionar lugares gastronómicos favoritos (restaurantes, cafeterías, bares y panaderías) con integración de Google Maps y geolocalización GPS.
+
+> **Aplicación educativa** desarrollada como proyecto de la asignatura Programación Multimedia y Dispositivos Móviles
+
+---
+
+## 📋 Tabla de Contenidos
+
+- [Características](#-características-principales)
+- [Tecnologías](#️-tecnologías)
+- [Requisitos](#-requisitos-previos)
+- [Instalación](#-instalación)
+- [Configuración](#️-configuración-de-google-maps-api-key)
+- [Estructura del Proyecto](#-estructura-del-proyecto)
+- [Base de Datos](#️-base-de-datos)
+- [Uso](#-uso-de-la-aplicación)
+- [Permisos](#-permisos-necesarios)
+- [Autora](#-autora)
 
 ---
 
 ## 🎯 Características Principales
 
-- 🗺️ **Visualización en Google Maps** con marcadores interactivos por categoría
-- ⭐ **Sistema de favoritos** para filtrar lugares especiales
+- 🗺️ **Visualización en Google Maps** con marcadores interactivos personalizados por categoría
+- ⭐ **Sistema de favoritos** para filtrar y destacar lugares especiales
 - 📍 **Geolocalización GPS** para obtener coordenadas automáticamente
-- 📤 **Compartir lugares** mediante cualquier app
-- 🗺️ **Ver en mapa** desde cada card individual
-- 💾 **Exportación de datos** a formato JSON
-- 🌍 **Multiidioma** (Inglés, Español, Euskera)
-- 🌓 **Modo claro y oscuro** adaptativo
-- 📱 **Diseño responsivo** para vertical, horizontal y tablets
+- 📤 **Compartir lugares** mediante cualquier app instalada (WhatsApp, Email, etc.)
+- 🗺️ **Ver en mapa** directamente desde cada card individual
+- 💾 **Exportación de datos** a formato JSON en almacenamiento interno
+- 🌍 **Multiidioma** con soporte completo para Inglés, Español y Euskera
+- 🌓 **Modo claro y oscuro** con adaptación automática
+- 📱 **Diseño responsivo** optimizado para orientación vertical, horizontal y tablets
 - ✏️ **CRUD completo** con SQLite (crear, leer, actualizar, eliminar)
+- ⚡ **Validación de formularios** con mensajes de error contextuales
+- 🎨 **Material Design 3** con componentes modernos y animaciones fluidas
 
 ---
 
 ## 🛠️ Tecnologías
 
-- **Lenguaje:** Kotlin 100%
-- **Base de datos:** SQLite (persistencia local)
-- **Mapas:** Google Maps SDK for Android
-- **Geolocalización:** FusedLocationProviderClient
-- **UI:** Material Design 3, ConstraintLayout, RecyclerView
-- **Exportación:** JSON (almacenamiento interno)
-- **SDK mínimo:** API 24 (Android 7.0)
-- **SDK objetivo:** API 34 (Android 14)
+| Categoría | Tecnología | Versión |
+|-----------|------------|---------|
+| **Lenguaje** | Kotlin | 100% |
+| **Base de datos** | SQLite | Nativa |
+| **Mapas** | Google Maps SDK for Android | Latest |
+| **Geolocalización** | FusedLocationProviderClient | Google Play Services |
+| **UI** | Material Design 3, ConstraintLayout, RecyclerView | Latest |
+| **Exportación** | JSON (Kotlinx Serialization) | - |
+| **SDK mínimo** | API 24 (Android 7.0 Nougat) | - |
+| **SDK objetivo** | API 34 (Android 14) | - |
+| **Build Tools** | Gradle (KTS), Android Studio | Latest |
+
+---
+
+## 📋 Requisitos Previos
+
+Antes de comenzar, asegúrate de tener instalado:
+
+- **Android Studio** (Hedgehog o superior recomendado)
+- **JDK 17** o superior
+- **Android SDK** con API Level 24-34
+- **Google Play Services** instalados en el emulador/dispositivo
+- **Cuenta de Google Cloud** (para obtener API Key de Maps)
+
+---
+
+## 🚀 Instalación
+
+### 1. Clonar el Repositorio
+
+```bash
+git clone https://github.com/tu-usuario/TastyPlacesApp.git
+cd TastyPlacesApp
+```
+
+### 2. Abrir en Android Studio
+
+1. Abre Android Studio
+2. Selecciona **File → Open**
+3. Navega hasta la carpeta del proyecto
+4. Espera a que Gradle sincronice las dependencias
+
+### 3. Configurar API Key (Ver sección siguiente)
+
+### 4. Ejecutar la Aplicación
+
+1. Conecta un dispositivo Android o inicia un emulador
+2. Asegúrate de que el dispositivo tenga Google Play Services
+3. Presiona **Run** (▶️) o usa `Shift + F10`
 
 ---
 
@@ -59,7 +119,10 @@ sdk.dir=/Users/usuario/Library/Android/sdk
 MAPS_API_KEY=AIzaSyBxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-**⚠️ Importante:** El archivo `local.properties` ya está en `.gitignore` por defecto, por lo que tu API Key no se subirá al repositorio.
+**⚠️ Importante:**
+- El archivo `local.properties` ya está en `.gitignore` por defecto, por lo que tu API Key no se subirá al repositorio.
+- **NO** añadas la API Key directamente en el `AndroidManifest.xml`
+- Gradle inyecta automáticamente la clave desde `local.properties` durante el proceso de build
 
 ---
 
@@ -114,8 +177,6 @@ Soporte completo para 3 idiomas:
 - 🇪🇸 **Español** - `values-es/strings.xml`
 - 🏴󐁥󐁳󐁰󐁶󐁿 **Euskera** - `values-eu/strings.xml`
 
-**Total:** 348 strings traducidos (116 por idioma)
-
 ---
 
 ## 📱 Funcionalidades Destacadas
@@ -149,13 +210,108 @@ Soporte completo para 3 idiomas:
 
 ## 📝 Uso de la Aplicación
 
-1. **Añadir lugar:** Pulsa el FAB (+) en la pantalla principal
-2. **Usar GPS:** En el formulario, pulsa "Usar mi ubicación"
-3. **Ver en mapa:** Pulsa el icono 🗺️ en cualquier card
-4. **Marcar favorito:** Pulsa el corazón ❤️ en el card
-5. **Eliminar:** Mantén presionado el card → Confirmar
-6. **Compartir:** Pulsa el icono 📤 para compartir
-7. **Exportar datos:** Menú (⋮) → Exportar
+### Pantalla Principal (MainActivity)
+
+| Acción | Cómo hacerlo |
+|--------|--------------|
+| **Añadir lugar** | Pulsa el botón flotante **+** (FAB) en la esquina inferior derecha |
+| **Ver en mapa** | Pulsa el icono 🗺️ en cualquier card de lugar |
+| **Marcar favorito** | Pulsa el corazón ❤️ en el card (cambia de color al activarse) |
+| **Editar lugar** | Pulsa sobre el card completo para abrir el formulario de edición |
+| **Eliminar lugar** | Mantén presionado el card → Confirmar en el diálogo |
+| **Compartir lugar** | Pulsa el icono 📤 para compartir mediante apps instaladas |
+| **Filtrar favoritos** | Menú (⋮) → Mostrar solo favoritos |
+| **Exportar datos** | Menú (⋮) → Exportar lugares a JSON |
+| **Cambiar idioma** | Menú (⋮) → Seleccionar idioma (ES/EN/EU) |
+
+### Formulario (FormActivity)
+
+| Acción | Cómo hacerlo |
+|--------|--------------|
+| **Usar ubicación GPS** | Pulsa el botón "Usar mi ubicación actual" |
+| **Seleccionar categoría** | Usa el Spinner para elegir entre Restaurant, Café, Bar o Bakery |
+| **Asignar rating** | Desliza la barra de estrellas (0-5 estrellas) |
+| **Guardar lugar** | Pulsa el botón "Guardar" (valida campos automáticamente) |
+| **Cancelar** | Usa el botón Atrás o el botón "Cancelar" |
+
+### Mapa (MapActivity)
+
+| Acción | Cómo hacerlo |
+|--------|--------------|
+| **Ver todos los lugares** | Se muestran automáticamente al abrir el mapa |
+| **Crear lugar en mapa** | Mantén presionado (long click) en una ubicación |
+| **Distinguir categorías** | Cada categoría tiene un color de marcador diferente |
+| **Ver detalles** | Pulsa un marcador para ver el título del lugar |
+
+---
+
+## 🔐 Permisos Necesarios
+
+La aplicación requiere los siguientes permisos:
+
+```xml
+<!-- Requerido para mapas y exportación -->
+<uses-permission android:name="android.permission.INTERNET" />
+
+<!-- Requerido para geolocalización GPS -->
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+<!-- Requerido solo en Android 7-9 para exportar archivos -->
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+    android:maxSdkVersion="28" />
+```
+
+**Nota:** Los permisos de ubicación se solicitan en tiempo de ejecución (Runtime Permissions) siguiendo las mejores prácticas de Android.
+
+---
+
+## 🎨 Capturas de Pantalla
+
+> **Nota:** Añade capturas de pantalla en una carpeta `/screenshots` y enlázalas aquí para mostrar visualmente la aplicación.
+
+---
+
+## 🚧 Mejoras Futuras
+
+- [ ] Importación de datos desde JSON
+- [ ] Integración con Google Places API para autocompletado
+- [ ] Sistema de búsqueda y filtrado avanzado
+- [ ] Fotos de lugares con cámara o galería
+- [ ] Sincronización en la nube (Firebase)
+- [ ] Rutas y navegación GPS hacia lugares
+- [ ] Modo sin conexión con caché de mapas
+- [ ] Compartir colecciones de lugares
+- [ ] Widget de inicio con lugares favoritos
+
+---
+
+## 🐛 Solución de Problemas
+
+### El mapa no se muestra
+
+- ✅ Verifica que la API Key esté correctamente configurada en `local.properties`
+- ✅ Asegúrate de haber habilitado **Maps SDK for Android** en Google Cloud Console
+- ✅ Revisa que el dispositivo/emulador tenga Google Play Services instalado
+- ✅ Limpia y reconstruye el proyecto: **Build → Clean Project → Rebuild Project**
+
+### Error de permisos de ubicación
+
+- ✅ Acepta los permisos de ubicación cuando la app los solicite
+- ✅ Verifica en Ajustes del dispositivo que los permisos estén activados
+- ✅ En emulador: **Extended Controls (⋯) → Location** para simular GPS
+
+### Gradle sync failed
+
+- ✅ Actualiza Android Studio a la última versión
+- ✅ Verifica tu conexión a Internet
+- ✅ Ejecuta: **File → Invalidate Caches → Invalidate and Restart**
+
+---
+
+## 📄 Licencia
+
+Este proyecto es de código educativo desarrollado con fines académicos. Siéntete libre de usarlo como referencia para aprendizaje.
 
 ---
 
@@ -164,4 +320,24 @@ Soporte completo para 3 idiomas:
 **Wara Pacheco**
 
 - **Asignatura:** Programación Multimedia y Dispositivos Móviles
+- **Curso:** 2025-2026
+- **Institución:** [Tu institución educativa]
 - **Fecha:** Febrero 2026
+
+---
+
+## 🙏 Agradecimientos
+
+- [Google Maps Platform](https://developers.google.com/maps) - SDK de mapas
+- [Material Design](https://m3.material.io/) - Guías de diseño
+- [Android Developers](https://developer.android.com/) - Documentación oficial
+
+---
+
+<div align="center">
+
+**⭐ Si este proyecto te ha sido útil, considera darle una estrella ⭐**
+
+Hecho con ❤️ y Kotlin
+
+</div>
