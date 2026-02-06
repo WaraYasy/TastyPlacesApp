@@ -1,0 +1,122 @@
+<resources>
+    <!-- App izena -->
+    <string name="app_name">TastyPlaces</string>
+
+    <!-- Main Activity -->
+    <string name="main_title">Nire Lekuak</string>
+    <string name="main_empty_list">Ez dago lekurik gehituta</string>
+    <string name="main_add_place">Lekua Gehitu</string>
+    <string name="main_view_map">Mapan Ikusi</string>
+    <string name="main_export">Datuak Esportatu</string>
+    <string name="main_delete_confirm">Leku hau ezabatu?</string>
+    <string name="main_deleted">Lekua ezabatuta</string>
+
+    <!-- Form Activity -->
+    <string name="form_title_add">Leku Berria Gehitu</string>
+    <string name="form_title_edit">Lekua Editatu</string>
+    <string name="form_name_hint">Lekuaren izena</string>
+    <string name="form_description_hint">Deskribapena</string>
+    <string name="form_latitude_hint">Latitudea</string>
+    <string name="form_longitude_hint">Longitudea</string>
+    <string name="form_category">Kategoria</string>
+    <string name="form_save">Gorde</string>
+    <string name="form_cancel">Utzi</string>
+    <string name="form_error_name">Izena beharrezkoa da</string>
+    <string name="form_error_coords">Koordenatu baliogabeak</string>
+    <string name="form_saved">Lekua ondo gordeta</string>
+    <string name="form_error">Errorea lekua gordetzean</string>
+    <string name="form_use_location">Nire kokalekua erabili</string>
+
+    <!-- Map Activity -->
+    <string name="map_title">Mapa</string>
+    <string name="map_no_places">Ez dago lekurik erakusteko</string>
+    <string name="map_permission_required">Kokaleku baimena behar da</string>
+    <string name="map_create_here">Lekua hemen sortu?</string>
+    <string name="map_create_here_message">Leku berri bat sortu nahi duzu kokapen honetan?</string>
+    <string name="map_my_location">Nire kokalekua</string>
+    <string name="map_delete_place">Lekua ezabatu</string>
+    <string name="map_delete_confirmation">Ziur zaude %1$s ezabatu nahi duzula?</string>
+    <string name="map_place_deleted">Lekua ezabatuta</string>
+    <string name="map_error_deleting">Errorea lekua ezabatzean</string>
+
+    <!-- Kategoriak -->
+    <string name="category_restaurant">Jatetxea</string>
+    <string name="category_cafe">Kafetegia</string>
+    <string name="category_bar">Taberna</string>
+    <string name="category_pizzeria">Pizzeria</string>
+    <string name="category_fastfood">Janari Bizkorra</string>
+    <string name="category_bakery">Okindegi</string>
+
+    <!-- Ohikoa -->
+    <string name="yes">Bai</string>
+    <string name="no">Ez</string>
+    <string name="ok">Ados</string>
+    <string name="cancel">Utzi</string>
+    <string name="delete">Ezabatu</string>
+    <string name="edit">Editatu</string>
+    <string name="error">Errorea</string>
+    <string name="success">Arrakasta</string>
+
+    <!-- Esportatu -->
+    <string name="export_success">Fitxategia Deskargetan gordeta! 📁\nArkiboen esploratzailean aurki dezakezu</string>
+    <string name="export_error">Errorea datuak esportatzean</string>
+    <string name="export_filename">lugares_export.json</string>
+
+    <!-- Hizkuntza hautatzailea -->
+    <string name="language_title">Hizkuntza hautatu</string>
+    <string name="language_changed">Hizkuntza aldatuta. Berrabiarazi aplikazioa aplikatzeko.</string>
+    <string name="language_menu">Hizkuntza</string>
+
+    <!-- Beheko nabigazioa -->
+    <string name="nav_explore">Arakatu</string>
+    <string name="nav_favorites">Gogokoak</string>
+    <string name="nav_map">Mapa</string>
+    <string name="nav_more">Gehiago</string>
+
+    <!-- Egoera -->
+    <string name="status_open">IREKITA</string>
+    <string name="status_closed">ITXITA</string>
+
+    <!-- Ekintzak -->
+    <string name="add_to_favorites">Gogokoetara gehitu</string>
+    <string name="added_to_favorites">Gogokoetara gehituta</string>
+    <string name="removed_from_favorites">Gogokoetatik kenduta</string>
+    <string name="share">Partekatu</string>
+    <string name="share_via">Honekin partekatu</string>
+    <string name="navigate">Nabigatu</string>
+
+    <!-- Formularioa -->
+    <string name="rating">Balorazioa</string>
+    <string name="opening_hours">Ordutegia</string>
+    <string name="cuisine_type">Sukaldaritza mota</string>
+    <string name="coordinates">Koordenatuak</string>
+
+    <!-- Gehiago menua -->
+    <string name="more_options">Aukera gehiago</string>
+    <string name="theme_mode">Kolore modua</string>
+    <string name="dark_mode">Modu Iluna</string>
+    <string name="light_mode">Modu Argia</string>
+    <string name="export_data">Datuak esportatu</string>
+    <string name="coming_soon">Laster</string>
+
+    <!-- Sukaldaritza motak -->
+    <string name="cuisine_specialty">Espezialtasuna</string>
+    <string name="cuisine_japanese">Japoniarra</string>
+    <string name="cuisine_italian">Italiarra</string>
+    <string name="cuisine_mexican">Mexikarra</string>
+    <string name="cuisine_chinese">Txinatarra</string>
+    <string name="cuisine_mediterranean">Mediterraneoa</string>
+    <string name="cuisine_vegetarian">Begetarianoa</string>
+    <string name="cuisine_cafe">Kafetegia</string>
+    <string name="cuisine_tapas">Tapak</string>
+    <string name="cuisine_american">Amerikarra</string>
+    <string name="cuisine_bakery">Okindegi</string>
+
+    <!-- Formularioaren erroreak eta mezuak -->
+    <string name="map_coordinates_loaded">Maparen koordenatuak kargatuta</string>
+    <string name="error_latitude_range">Latitudea -90 eta 90 artean egon behar da</string>
+    <string name="error_longitude_range">Longitudea -180 eta 180 artean egon behar da</string>
+    <string name="location_obtained">Kokapena lortuta</string>
+    <string name="error_location_failed">Ezin izan da kokapena lortu</string>
+    <string name="error_location_exception">Errorea kokapena lortzean: %1$s</string>
+</resources>

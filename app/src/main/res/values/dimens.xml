@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tamaños para teléfonos (default) -->
+
+    <!-- Card de lugar -->
+    <dimen name="lugar_image_width">110dp</dimen>
+    <dimen name="lugar_image_height">90dp</dimen>
+    <dimen name="lugar_card_margin">8dp</dimen>
+    <dimen name="lugar_card_padding">12dp</dimen>
+
+    <!-- Iconos -->
+    <dimen name="icon_small">20dp</dimen>
+    <dimen name="icon_button_size">48dp</dimen>
+
+    <!-- Texto -->
+    <dimen name="text_title">20sp</dimen>
+    <dimen name="text_body">14sp</dimen>
+    <dimen name="text_caption">13sp</dimen>
+
+    <!-- Espaciado -->
+    <dimen name="spacing_small">4dp</dimen>
+    <dimen name="spacing_normal">8dp</dimen>
+    <dimen name="spacing_medium">12dp</dimen>
+    <dimen name="spacing_large">16dp</dimen>
+    <dimen name="spacing_xlarge">24dp</dimen>
+
+    <!-- Cards -->
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+
+    <!-- Barra de categoría -->
+    <dimen name="categoria_bar_width">4dp</dimen>
+
+    <!-- Formularios -->
+    <dimen name="form_padding">24dp</dimen>
+    <dimen name="form_field_spacing">16dp</dimen>
+    <dimen name="form_label_spacing">8dp</dimen>
+    <dimen name="form_section_spacing">12dp</dimen>
+    <dimen name="form_label_text_size">16sp</dimen>
+    <dimen name="form_input_height">56dp</dimen>
+    <dimen name="form_button_height">60dp</dimen>
+    <dimen name="form_spinner_padding">12dp</dimen>
+    <dimen name="form_column_spacing">8dp</dimen>
+    <dimen name="form_coordinate_text_size">14sp</dimen>
+
+    <!-- Tamaños específicos para landscape (más compactos) -->
+    <dimen name="lugar_image_width_land">80dp</dimen>
+    <dimen name="lugar_image_height_land">80dp</dimen>
+    <dimen name="lugar_card_margin_land">6dp</dimen>
+    <dimen name="lugar_card_padding_land">10dp</dimen>
+    <dimen name="icon_small_land">16dp</dimen>
+    <dimen name="icon_button_size_land">40dp</dimen>
+    <dimen name="text_title_land">16sp</dimen>
+    <dimen name="text_body_land">13sp</dimen>
+    <dimen name="text_caption_land">12sp</dimen>
+    <dimen name="card_corner_radius_land">12dp</dimen>
+
+    <!-- Formularios landscape (más compactos) -->
+    <dimen name="form_padding_land">16dp</dimen>
+    <dimen name="form_field_spacing_land">12dp</dimen>
+    <dimen name="form_label_spacing_land">8dp</dimen>
+    <dimen name="form_label_text_size_land">14sp</dimen>
+    <dimen name="form_input_height_land">56dp</dimen>
+    <dimen name="form_button_height_land">56dp</dimen>
+    <dimen name="form_spinner_padding_land">12dp</dimen>
+    <dimen name="form_column_spacing_land">8dp</dimen>
+    <dimen name="form_column_spacing_small_land">4dp</dimen>
+    <dimen name="form_coordinate_text_size_land">13sp</dimen>
+</resources>

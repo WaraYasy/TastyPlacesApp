@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Cuando está enfocado - BLANCO en modo oscuro -->
+    <item android:state_focused="true" android:color="@color/white" />
+    <!-- Cuando está activado/expandido - BLANCO en modo oscuro -->
+    <item android:state_activated="true" android:color="@color/white" />
+    <!-- Estado normal -->
+    <item android:color="@color/text_secondary" />
+</selector>

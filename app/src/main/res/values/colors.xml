@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Basic colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Light theme - Soft Blue/Teal Palette -->
+    <color name="primary">#65AFBF</color>
+    <color name="primary_variant">#4A9AAA</color>
+    <color name="secondary">#96CCD9</color>
+    <color name="secondary_variant">#7AB8C9</color>
+    <color name="accent">#BF7E7E</color>
+
+    <color name="background">#F4FAFA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="card_background">#FFFFFF</color>
+
+    <color name="text_primary">#2C3E50</color>
+    <color name="text_secondary">#7F8C8D</color>
+    <color name="text_hint">#BDC3C7</color>
+
+    <color name="divider">#DFEDF2</color>
+    <color name="icon_tint">#95A5A6</color>
+
+    <!-- Estados de lugares -->
+    <color name="estado_abierto">#4CAF50</color>
+    <color name="estado_cerrado">#95A5A6</color>
+    <color name="rating_star">#FFC107</color>
+
+    <!-- Colores por categoría (tonos suaves que combinan con la paleta) -->
+    <color name="categoria_restaurante">#BF7E7E</color>
+    <color name="categoria_cafeteria">#A1887F</color>
+    <color name="categoria_bar">#65AFBF</color>
+    <color name="categoria_panaderia">#D4A5A5</color>
+</resources>

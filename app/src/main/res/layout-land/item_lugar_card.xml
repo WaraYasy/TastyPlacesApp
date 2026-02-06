@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/lugar_card_margin_land"
+    app:cardCornerRadius="@dimen/card_corner_radius_land"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/card_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/lugar_card_padding_land">
+
+        <!-- Barra de color de categoría (izquierda) -->
+        <View
+            android:id="@+id/viewColorCategoria"
+            android:layout_width="@dimen/categoria_bar_width"
+            android:layout_height="0dp"
+            android:background="@color/categoria_restaurante"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- Imagen del lugar (más pequeña en landscape) -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivLugarImagen"
+            android:layout_width="@dimen/lugar_image_width_land"
+            android:layout_height="@dimen/lugar_image_height_land"
+            android:layout_marginStart="@dimen/spacing_small"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_food"
+            app:shapeAppearanceOverlay="@style/RoundedCornerImage"
+            app:layout_constraintStart_toEndOf="@id/viewColorCategoria"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- Nombre del lugar -->
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_normal"
+            android:layout_marginEnd="@dimen/spacing_small"
+            android:textSize="@dimen/text_title_land"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintEnd_toStartOf="@id/ivFavorito"
+            app:layout_constraintStart_toEndOf="@id/ivLugarImagen"
+            app:layout_constraintTop_toTopOf="@id/ivLugarImagen"
+            tools:text="Café Central" />
+
+        <!-- Rating con estrella -->
+        <ImageView
+            android:id="@+id/ivStar"
+            android:layout_width="@dimen/icon_small_land"
+            android:layout_height="@dimen/icon_small_land"
+            android:layout_marginStart="@dimen/spacing_normal"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:src="@drawable/ic_star_filled"
+            android:contentDescription="@string/rating"
+            app:layout_constraintStart_toEndOf="@id/ivLugarImagen"
+            app:layout_constraintTop_toBottomOf="@id/tvNombre" />
+
+        <TextView
+            android:id="@+id/tvRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_small"
+            android:textSize="@dimen/text_body_land"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/ivStar"
+            app:layout_constraintTop_toTopOf="@id/ivStar"
+            app:layout_constraintBottom_toBottomOf="@id/ivStar"
+            tools:text="4.8" />
+
+        <!-- Tipo de cocina -->
+        <TextView
+            android:id="@+id/tvTipoCocina"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_normal"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:layout_marginEnd="@dimen/spacing_small"
+            android:textSize="@dimen/text_caption_land"
+            android:textColor="@color/text_secondary"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintEnd_toStartOf="@id/ivFavorito"
+            app:layout_constraintStart_toEndOf="@id/ivLugarImagen"
+            app:layout_constraintTop_toBottomOf="@id/ivStar"
+            tools:text="Especialidad" />
+
+        <!-- Botón Favorito (más pequeño) -->
+        <ImageButton
+            android:id="@+id/ivFavorito"
+            android:layout_width="@dimen/icon_button_size_land"
+            android:layout_height="@dimen/icon_button_size_land"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_favorite_border"
+            android:contentDescription="@string/add_to_favorites"
+            app:tint="@color/accent"
+            app:layout_constraintEnd_toStartOf="@id/ivVerMapa"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Botón Ver en Mapa (más pequeño) -->
+        <ImageButton
+            android:id="@+id/ivVerMapa"
+            android:layout_width="@dimen/icon_button_size_land"
+            android:layout_height="@dimen/icon_button_size_land"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_map"
+            android:contentDescription="@string/main_view_map"
+            app:tint="@color/icon_tint"
+            app:layout_constraintEnd_toStartOf="@id/ivCompartir"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Botón Compartir (más pequeño) -->
+        <ImageButton
+            android:id="@+id/ivCompartir"
+            android:layout_width="@dimen/icon_button_size_land"
+            android:layout_height="@dimen/icon_button_size_land"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_share"
+            android:contentDescription="@string/share"
+            app:tint="@color/icon_tint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

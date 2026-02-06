@@ -1,0 +1,122 @@
+<resources>
+    <!-- Nombre de la app -->
+    <string name="app_name">TastyPlaces</string>
+
+    <!-- Main Activity -->
+    <string name="main_title">Mis Lugares</string>
+    <string name="main_empty_list">No hay lugares añadidos</string>
+    <string name="main_add_place">Añadir Lugar</string>
+    <string name="main_view_map">Ver en Mapa</string>
+    <string name="main_export">Exportar Datos</string>
+    <string name="main_delete_confirm">¿Eliminar este lugar?</string>
+    <string name="main_deleted">Lugar eliminado</string>
+
+    <!-- Form Activity -->
+    <string name="form_title_add">Añadir Nuevo Lugar</string>
+    <string name="form_title_edit">Editar Lugar</string>
+    <string name="form_name_hint">Nombre del lugar</string>
+    <string name="form_description_hint">Descripción</string>
+    <string name="form_latitude_hint">Latitud</string>
+    <string name="form_longitude_hint">Longitud</string>
+    <string name="form_category">Categoría</string>
+    <string name="form_save">Guardar</string>
+    <string name="form_cancel">Cancelar</string>
+    <string name="form_error_name">El nombre es obligatorio</string>
+    <string name="form_error_coords">Coordenadas inválidas</string>
+    <string name="form_saved">Lugar guardado correctamente</string>
+    <string name="form_error">Error al guardar el lugar</string>
+    <string name="form_use_location">Usar mi ubicación</string>
+
+    <!-- Map Activity -->
+    <string name="map_title">Mapa</string>
+    <string name="map_no_places">No hay lugares para mostrar</string>
+    <string name="map_permission_required">Permiso de ubicación requerido</string>
+    <string name="map_create_here">¿Crear lugar aquí?</string>
+    <string name="map_create_here_message">¿Quieres crear un nuevo lugar en esta ubicación?</string>
+    <string name="map_my_location">Mi ubicación</string>
+    <string name="map_delete_place">Eliminar lugar</string>
+    <string name="map_delete_confirmation">¿Estás seguro de eliminar %1$s?</string>
+    <string name="map_place_deleted">Lugar eliminado</string>
+    <string name="map_error_deleting">Error al eliminar el lugar</string>
+
+    <!-- Categorías -->
+    <string name="category_restaurant">Restaurante</string>
+    <string name="category_cafe">Cafetería</string>
+    <string name="category_bar">Bar</string>
+    <string name="category_pizzeria">Pizzería</string>
+    <string name="category_fastfood">Comida Rápida</string>
+    <string name="category_bakery">Panadería</string>
+
+    <!-- Común -->
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="ok">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="delete">Eliminar</string>
+    <string name="edit">Editar</string>
+    <string name="error">Error</string>
+    <string name="success">Éxito</string>
+
+    <!-- Exportar -->
+    <string name="export_success">¡Archivo guardado en Descargas! 📁\nPuedes encontrarlo en el explorador de archivos</string>
+    <string name="export_error">Error al exportar datos</string>
+    <string name="export_filename">lugares_export.json</string>
+
+    <!-- Selector de idioma -->
+    <string name="language_title">Seleccionar idioma</string>
+    <string name="language_changed">Idioma cambiado. Reinicia la app para aplicar.</string>
+    <string name="language_menu">Idioma</string>
+
+    <!-- Navegación inferior -->
+    <string name="nav_explore">Explorar</string>
+    <string name="nav_favorites">Favoritos</string>
+    <string name="nav_map">Mapa</string>
+    <string name="nav_more">Más</string>
+
+    <!-- Estado -->
+    <string name="status_open">ABIERTO</string>
+    <string name="status_closed">CERRADO</string>
+
+    <!-- Acciones -->
+    <string name="add_to_favorites">Añadir a favoritos</string>
+    <string name="added_to_favorites">Añadido a favoritos</string>
+    <string name="removed_from_favorites">Eliminado de favoritos</string>
+    <string name="share">Compartir</string>
+    <string name="share_via">Compartir vía</string>
+    <string name="navigate">Navegar</string>
+
+    <!-- Formulario -->
+    <string name="rating">Valoración</string>
+    <string name="opening_hours">Horario</string>
+    <string name="cuisine_type">Tipo de cocina</string>
+    <string name="coordinates">Coordenadas</string>
+
+    <!-- Menú Más -->
+    <string name="more_options">Más opciones</string>
+    <string name="theme_mode">Modo de color</string>
+    <string name="dark_mode">Modo Oscuro</string>
+    <string name="light_mode">Modo Claro</string>
+    <string name="export_data">Exportar datos</string>
+    <string name="coming_soon">Próximamente</string>
+
+    <!-- Tipos de cocina -->
+    <string name="cuisine_specialty">Especialidad</string>
+    <string name="cuisine_japanese">Japonés</string>
+    <string name="cuisine_italian">Italiano</string>
+    <string name="cuisine_mexican">Mexicano</string>
+    <string name="cuisine_chinese">Chino</string>
+    <string name="cuisine_mediterranean">Mediterráneo</string>
+    <string name="cuisine_vegetarian">Vegetariano</string>
+    <string name="cuisine_cafe">Cafetería</string>
+    <string name="cuisine_tapas">Tapas</string>
+    <string name="cuisine_american">Americana</string>
+    <string name="cuisine_bakery">Panadería</string>
+
+    <!-- Errores y mensajes del formulario -->
+    <string name="map_coordinates_loaded">Coordenadas del mapa cargadas</string>
+    <string name="error_latitude_range">Latitud debe estar entre -90 y 90</string>
+    <string name="error_longitude_range">Longitud debe estar entre -180 y 180</string>
+    <string name="location_obtained">Ubicación obtenida</string>
+    <string name="error_location_failed">No se pudo obtener la ubicación</string>
+    <string name="error_location_exception">Error al obtener ubicación: %1$s</string>
+</resources>

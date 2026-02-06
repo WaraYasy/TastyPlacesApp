@@ -1,0 +1,13 @@
+## Este archivo es una plantilla para local.properties
+## Copia este archivo a "local.properties" y añade tu Google Maps API Key
+
+# SDK location (esto se genera automáticamente por Android Studio)
+sdk.dir=/Users/TU_USUARIO/Library/Android/sdk
+
+# Google Maps API Key
+# Obtén tu clave en: https://console.cloud.google.com/
+# 1. Crea un proyecto
+# 2. Habilita "Maps SDK for Android"
+# 3. Ve a Credenciales → Crear credenciales → Clave de API
+# 4. Copia la clave y pégala aquí:
+MAPS_API_KEY=TU_GOOGLE_MAPS_API_KEY_AQUI

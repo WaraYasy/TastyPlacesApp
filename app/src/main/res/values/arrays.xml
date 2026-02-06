@@ -1,0 +1,24 @@
+<resources>
+    <!-- Categorías de lugares (4 principales) -->
+    <string-array name="categorias">
+        <item>@string/category_restaurant</item>
+        <item>@string/category_cafe</item>
+        <item>@string/category_bar</item>
+        <item>@string/category_bakery</item>
+    </string-array>
+
+    <!-- Tipos de cocina -->
+    <string-array name="tipos_cocina">
+        <item>@string/cuisine_specialty</item>
+        <item>@string/cuisine_japanese</item>
+        <item>@string/cuisine_italian</item>
+        <item>@string/cuisine_mexican</item>
+        <item>@string/cuisine_chinese</item>
+        <item>@string/cuisine_mediterranean</item>
+        <item>@string/cuisine_vegetarian</item>
+        <item>@string/cuisine_cafe</item>
+        <item>@string/cuisine_tapas</item>
+        <item>@string/cuisine_american</item>
+        <item>@string/cuisine_bakery</item>
+    </string-array>
+</resources>

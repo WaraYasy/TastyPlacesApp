@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tamaños para tablets 7" y superiores (sw600dp) -->
+
+    <!-- Card de lugar - 20% más grande -->
+    <dimen name="lugar_image_width">132dp</dimen>
+    <dimen name="lugar_image_height">108dp</dimen>
+    <dimen name="lugar_card_margin">12dp</dimen>
+    <dimen name="lugar_card_padding">16dp</dimen>
+
+    <!-- Iconos - más grandes -->
+    <dimen name="icon_small">24dp</dimen>
+    <dimen name="icon_button_size">56dp</dimen>
+
+    <!-- Texto - más grande -->
+    <dimen name="text_title">24sp</dimen>
+    <dimen name="text_body">16sp</dimen>
+    <dimen name="text_caption">15sp</dimen>
+
+    <!-- Espaciado - más generoso -->
+    <dimen name="spacing_small">6dp</dimen>
+    <dimen name="spacing_normal">12dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_large">20dp</dimen>
+    <dimen name="spacing_xlarge">32dp</dimen>
+
+    <!-- Cards -->
+    <dimen name="card_corner_radius">20dp</dimen>
+    <dimen name="card_elevation">3dp</dimen>
+
+    <!-- Barra de categoría -->
+    <dimen name="categoria_bar_width">6dp</dimen>
+
+    <!-- Formularios - 20% más grande -->
+    <dimen name="form_padding">32dp</dimen>
+    <dimen name="form_field_spacing">20dp</dimen>
+    <dimen name="form_label_spacing">10dp</dimen>
+    <dimen name="form_section_spacing">16dp</dimen>
+    <dimen name="form_label_text_size">18sp</dimen>
+    <dimen name="form_input_height">64dp</dimen>
+    <dimen name="form_button_height">68dp</dimen>
+    <dimen name="form_spinner_padding">14dp</dimen>
+    <dimen name="form_column_spacing">12dp</dimen>
+    <dimen name="form_coordinate_text_size">16sp</dimen>
+
+    <!-- Tamaños específicos para landscape en tablet 7" -->
+    <dimen name="lugar_image_width_land">96dp</dimen>
+    <dimen name="lugar_image_height_land">96dp</dimen>
+    <dimen name="lugar_card_margin_land">10dp</dimen>
+    <dimen name="lugar_card_padding_land">14dp</dimen>
+    <dimen name="icon_small_land">20dp</dimen>
+    <dimen name="icon_button_size_land">48dp</dimen>
+    <dimen name="text_title_land">18sp</dimen>
+    <dimen name="text_body_land">15sp</dimen>
+    <dimen name="text_caption_land">14sp</dimen>
+    <dimen name="card_corner_radius_land">16dp</dimen>
+
+    <!-- Formularios landscape en tablet 7" -->
+    <dimen name="form_padding_land">24dp</dimen>
+    <dimen name="form_field_spacing_land">16dp</dimen>
+    <dimen name="form_label_spacing_land">10dp</dimen>
+    <dimen name="form_label_text_size_land">16sp</dimen>
+    <dimen name="form_input_height_land">64dp</dimen>
+    <dimen name="form_button_height_land">64dp</dimen>
+    <dimen name="form_spinner_padding_land">14dp</dimen>
+    <dimen name="form_column_spacing_land">12dp</dimen>
+    <dimen name="form_column_spacing_small_land">6dp</dimen>
+    <dimen name="form_coordinate_text_size_land">15sp</dimen>
+</resources>

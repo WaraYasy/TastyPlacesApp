@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="80dp"
+    android:viewportWidth="120"
+    android:viewportHeight="80">
+    <!-- Fondo gris claro -->
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M0,0h120v80h-120z"/>
+    <!-- Ícono simplificado de comida -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M40,25h40v3h-40zM45,32h30v2h-30zM50,38h20v2h-20zM55,44h10v2h-10z"/>
+    <!-- Círculo central -->
+    <path
+        android:fillColor="#BDBDBD"
+        android:pathData="M60,40m-8,0a8,8 0,1,1 16,0a8,8 0,1,1 -16,0"/>
+</vector>

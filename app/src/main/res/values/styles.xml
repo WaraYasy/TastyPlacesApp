@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Estilo para imágenes con esquinas redondeadas -->
+    <style name="RoundedCornerImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <!-- Theme overlay para el popup menu de la toolbar -->
+    <style name="ThemeOverlay.PopupMenu" parent="ThemeOverlay.Material3">
+        <item name="popupMenuBackground">@drawable/bg_popup_menu</item>
+        <item name="android:popupBackground">@drawable/bg_popup_menu</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="colorOnSurface">@color/white</item>
+    </style>
+</resources>

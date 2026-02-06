@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Basic colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Dark theme - Purple/Blue Dark Palette -->
+    <color name="primary">#5177B4</color>
+    <color name="primary_variant">#3378AB</color>
+    <color name="secondary">#9586FB</color>
+    <color name="secondary_variant">#7C6BE8</color>
+    <color name="accent">#ECB0CC</color>
+
+    <color name="background">#343A4A</color>
+    <color name="surface">#1A1D26</color>
+    <color name="card_background">#1A1D26</color>
+
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0B3BA</color>
+    <color name="text_hint">#6C7280</color>
+
+    <color name="divider">#4A5060</color>
+    <color name="icon_tint">#9CA3AF</color>
+
+    <!-- Colores por categoría (modo oscuro) -->
+    <color name="categoria_restaurante">#ECB0CC</color>
+    <color name="categoria_cafeteria">#A1887F</color>
+    <color name="categoria_bar">#9586FB</color>
+    <color name="categoria_panaderia">#D4A5A5</color>
+</resources>

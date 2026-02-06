@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Ver favoritos -->
+    <item
+        android:id="@+id/action_favoritos"
+        android:icon="@drawable/ic_favorite_border"
+        android:title="@string/nav_favorites"
+        app:iconTint="@color/white"
+        app:showAsAction="ifRoom" />
+
+    <!-- Ver en mapa -->
+    <item
+        android:id="@+id/action_view_map"
+        android:icon="@drawable/ic_map"
+        android:title="@string/main_view_map"
+        app:iconTint="@color/white"
+        app:showAsAction="ifRoom" />
+
+    <!-- Exportar datos -->
+    <item
+        android:id="@+id/action_export"
+        android:icon="@drawable/ic_share"
+        android:title="@string/main_export"
+        app:iconTint="@color/white"
+        app:showAsAction="never" />
+
+    <!-- Idioma -->
+    <item
+        android:id="@+id/action_language"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="@string/language_menu"
+        app:iconTint="@color/white"
+        app:showAsAction="never" />
+
+    <!-- Modo de color -->
+    <item
+        android:id="@+id/action_theme_mode"
+        android:icon="@android:drawable/ic_menu_day"
+        android:title="@string/theme_mode"
+        app:iconTint="@color/white"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <!-- Toolbar -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            android:elevation="4dp"
+            app:title="@string/form_title_add"
+            app:titleTextColor="@color/white"
+            app:navigationIcon="@android:drawable/ic_menu_close_clear_cancel" />
+
+        <!-- Contenedor del formulario con dos columnas -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/form_padding_land">
+
+            <!-- Nombre (ancho completo) -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/form_field_spacing_land"
+                android:hint="@string/form_name_hint"
+                app:boxBackgroundColor="@color/surface"
+                app:boxStrokeColor="@color/primary"
+                app:hintTextColor="@color/primary"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:textColor="@color/text_primary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Descripción (ancho completo) -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/form_field_spacing_land"
+                android:hint="@string/form_description_hint"
+                app:boxBackgroundColor="@color/surface"
+                app:boxStrokeColor="@color/primary"
+                app:hintTextColor="@color/primary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:textColor="@color/text_primary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Fila 1: Categoría y Tipo de Cocina -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/form_field_spacing_land"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!-- Columna izquierda: Categoría -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/form_column_spacing_land"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/form_label_spacing_land"
+                        android:text="@string/form_category"
+                        android:textColor="@color/text_primary"
+                        android:textSize="@dimen/form_label_text_size_land"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinnerCategoria"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/form_input_height_land"
+                        android:background="@drawable/bg_spinner"
+                        android:padding="@dimen/form_spinner_padding_land"
+                        android:popupBackground="@color/surface" />
+                </LinearLayout>
+
+                <!-- Columna derecha: Tipo de Cocina -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/form_column_spacing_land"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/form_label_spacing_land"
+                        android:text="@string/cuisine_type"
+                        android:textColor="@color/text_primary"
+                        android:textSize="@dimen/form_label_text_size_land"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinnerTipoCocina"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/form_input_height_land"
+                        android:background="@drawable/bg_spinner"
+                        android:padding="@dimen/form_spinner_padding_land"
+                        android:popupBackground="@color/surface" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Fila 2: Rating y Coordenadas -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/form_field_spacing_land"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!-- Columna izquierda: Rating -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/form_column_spacing_land"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/form_label_spacing_land"
+                        android:text="@string/rating"
+                        android:textColor="@color/text_primary"
+                        android:textSize="@dimen/form_label_text_size_land"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="0"
+                        android:stepSize="0.5"
+                        android:progressTint="@color/rating_star" />
+                </LinearLayout>
+
+                <!-- Columna derecha: Coordenadas -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/form_column_spacing_land"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/form_label_spacing_land"
+                        android:text="@string/coordinates"
+                        android:textColor="@color/text_primary"
+                        android:textSize="@dimen/form_label_text_size_land"
+                        android:textStyle="bold" />
+
+                    <!-- Latitud y Longitud en horizontal -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/tilLatitud"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/form_column_spacing_small_land"
+                            android:layout_weight="1"
+                            android:hint="@string/form_latitude_hint"
+                            app:boxBackgroundColor="@color/surface"
+                            app:boxStrokeColor="@color/primary"
+                            app:errorEnabled="false"
+                            app:hintTextColor="@color/primary">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etLatitud"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="numberDecimal|numberSigned"
+                                android:maxLines="1"
+                                android:textColor="@color/text_primary"
+                                android:textSize="@dimen/form_coordinate_text_size_land" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/tilLongitud"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/form_column_spacing_small_land"
+                            android:layout_weight="1"
+                            android:hint="@string/form_longitude_hint"
+                            app:boxBackgroundColor="@color/surface"
+                            app:boxStrokeColor="@color/primary"
+                            app:errorEnabled="false"
+                            app:hintTextColor="@color/primary">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etLongitud"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="numberDecimal|numberSigned"
+                                android:maxLines="1"
+                                android:textColor="@color/text_primary"
+                                android:textSize="@dimen/form_coordinate_text_size_land" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Botón obtener ubicación -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnUsarUbicacion"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/form_field_spacing_land"
+                android:text="@string/form_use_location"
+                android:textColor="@color/primary"
+                app:icon="@android:drawable/ic_menu_mylocation"
+                app:iconTint="@color/primary"
+                app:strokeColor="@color/primary" />
+
+            <!-- Botones de acción -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCancelar"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/form_button_height_land"
+                    android:layout_marginEnd="@dimen/form_column_spacing_land"
+                    android:layout_weight="1"
+                    android:text="@string/form_cancel"
+                    android:textColor="@color/text_secondary"
+                    app:strokeColor="@color/divider" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGuardar"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/form_button_height_land"
+                    android:layout_marginStart="@dimen/form_column_spacing_land"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/primary"
+                    android:text="@string/form_save"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

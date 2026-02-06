@@ -1,0 +1,122 @@
+<resources>
+    <!-- App name -->
+    <string name="app_name">TastyPlaces</string>
+
+    <!-- Main Activity -->
+    <string name="main_title">My Places</string>
+    <string name="main_empty_list">No places added yet</string>
+    <string name="main_add_place">Add Place</string>
+    <string name="main_view_map">View on Map</string>
+    <string name="main_export">Export Data</string>
+    <string name="main_delete_confirm">Delete this place?</string>
+    <string name="main_deleted">Place deleted</string>
+
+    <!-- Form Activity -->
+    <string name="form_title_add">Add New Place</string>
+    <string name="form_title_edit">Edit Place</string>
+    <string name="form_name_hint">Place name</string>
+    <string name="form_description_hint">Description</string>
+    <string name="form_latitude_hint">Latitude</string>
+    <string name="form_longitude_hint">Longitude</string>
+    <string name="form_category">Category</string>
+    <string name="form_save">Save</string>
+    <string name="form_cancel">Cancel</string>
+    <string name="form_error_name">Name is required</string>
+    <string name="form_error_coords">Invalid coordinates</string>
+    <string name="form_saved">Place saved successfully</string>
+    <string name="form_error">Error saving place</string>
+    <string name="form_use_location">Use my location</string>
+
+    <!-- Map Activity -->
+    <string name="map_title">Map</string>
+    <string name="map_no_places">No places to show</string>
+    <string name="map_permission_required">Location permission required</string>
+    <string name="map_create_here">Create place here?</string>
+    <string name="map_create_here_message">Do you want to create a new place at this location?</string>
+    <string name="map_my_location">My location</string>
+    <string name="map_delete_place">Delete place</string>
+    <string name="map_delete_confirmation">Are you sure you want to delete %1$s?</string>
+    <string name="map_place_deleted">Place deleted</string>
+    <string name="map_error_deleting">Error deleting place</string>
+
+    <!-- Categories -->
+    <string name="category_restaurant">Restaurant</string>
+    <string name="category_cafe">Café</string>
+    <string name="category_bar">Bar</string>
+    <string name="category_pizzeria">Pizzeria</string>
+    <string name="category_fastfood">Fast Food</string>
+    <string name="category_bakery">Bakery</string>
+
+    <!-- Common -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="error">Error</string>
+    <string name="success">Success</string>
+
+    <!-- Export -->
+    <string name="export_success">File saved in Downloads folder! 📁\nYou can find it in your device\'s file manager</string>
+    <string name="export_error">Error exporting data</string>
+    <string name="export_filename">lugares_export.json</string>
+
+    <!-- Language Selector -->
+    <string name="language_title">Select Language</string>
+    <string name="language_changed">Language changed. Restart app to apply.</string>
+    <string name="language_menu">Language</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_explore">Explore</string>
+    <string name="nav_favorites">Favorites</string>
+    <string name="nav_map">Map</string>
+    <string name="nav_more">More</string>
+
+    <!-- Status -->
+    <string name="status_open">OPEN</string>
+    <string name="status_closed">CLOSED</string>
+
+    <!-- Actions -->
+    <string name="add_to_favorites">Add to favorites</string>
+    <string name="added_to_favorites">Added to favorites</string>
+    <string name="removed_from_favorites">Removed from favorites</string>
+    <string name="share">Share</string>
+    <string name="share_via">Share via</string>
+    <string name="navigate">Navigate</string>
+
+    <!-- Form -->
+    <string name="rating">Rating</string>
+    <string name="opening_hours">Opening hours</string>
+    <string name="cuisine_type">Cuisine type</string>
+    <string name="coordinates">Coordinates</string>
+
+    <!-- More Menu -->
+    <string name="more_options">More options</string>
+    <string name="theme_mode">Color mode</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="light_mode">Light Mode</string>
+    <string name="export_data">Export data</string>
+    <string name="coming_soon">Coming soon</string>
+
+    <!-- Cuisine Types -->
+    <string name="cuisine_specialty">Specialty</string>
+    <string name="cuisine_japanese">Japanese</string>
+    <string name="cuisine_italian">Italian</string>
+    <string name="cuisine_mexican">Mexican</string>
+    <string name="cuisine_chinese">Chinese</string>
+    <string name="cuisine_mediterranean">Mediterranean</string>
+    <string name="cuisine_vegetarian">Vegetarian</string>
+    <string name="cuisine_cafe">Café</string>
+    <string name="cuisine_tapas">Tapas</string>
+    <string name="cuisine_american">American</string>
+    <string name="cuisine_bakery">Bakery</string>
+
+    <!-- Form Errors and Messages -->
+    <string name="map_coordinates_loaded">Map coordinates loaded</string>
+    <string name="error_latitude_range">Latitude must be between -90 and 90</string>
+    <string name="error_longitude_range">Longitude must be between -180 and 180</string>
+    <string name="location_obtained">Location obtained</string>
+    <string name="error_location_failed">Could not get location</string>
+    <string name="error_location_exception">Error getting location: %1$s</string>
+</resources>
